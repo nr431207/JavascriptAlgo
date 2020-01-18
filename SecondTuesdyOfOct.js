@@ -5,9 +5,10 @@ const getSecondTuesday = year => {
   if(year.toString().length !== 4) {
     return 'year is invalid';
   }
+  let dayNumbers = new Date('2020-09').getDate()
   let newDate = new Date(year, 09);
   let tuesdays = [];
-  for(let i = 1; i < 32; i += 1) {
+  for(let i = 1; i <= dayNumbers ; i += 1) {
     if(newDate.getDay(newDate.setDate(i)) === 2) {
       tuesdays.push(new Date(year, 09, i))
     }
