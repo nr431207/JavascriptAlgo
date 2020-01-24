@@ -6,6 +6,7 @@ const getSecondTuesday = year => {
     return 'year is invalid';
   }
   let dayNumbers = new Date('2020-09').getDate()
+  console.log(dayNumbers)
   let newDate = new Date(year, 09);
   let tuesdays = [];
   for(let i = 1; i <= dayNumbers ; i += 1) {
